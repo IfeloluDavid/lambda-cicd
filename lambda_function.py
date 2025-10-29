@@ -8,6 +8,7 @@ def lambda_handler(event, context):
     # Random emojis & reactions
     emojis = ["🔥", "🤯", "😎", "🦄", "💥", "🛸", "🤖", "🐍", "⚡"]
     reactions = [
+        "David has done it again"
         "The CI/CD gods are pleased!",
         "Your pipeline just flexed its muscles 💪",
         "Lambda unleashed chaos successfully.",
@@ -28,7 +29,7 @@ def lambda_handler(event, context):
 
     # Build chaotic output
     crazy_output = {
-        "David see" :" -it worked",
+        "David see" :" -it worked - again",
         "joke": joke,
         "emoji": random.choice(emojis),
         "reaction": random.choice(reactions),
