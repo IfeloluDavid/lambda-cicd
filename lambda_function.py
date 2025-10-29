@@ -26,19 +26,9 @@ def lambda_handler(event, context):
     except Exception as e:
         joke = f"Failed to fetch joke: {e}"
 
-    # Randomly decide to call itself once
-    invoked = event.get("invoked", False)
-    if not invoked:
-        print("Summoning Lambda recursion 🔁")
-        lambda_client = boto3.client("lambda")
-        lambda_client.invoke(
-            FunctionName=os.environ["AWS_LAMBDA_FUNCTION_NAME"],
-            InvocationType="Event",
-            Payload=json.dumps({"invoked": True})
-        )
-
     # Build chaotic output
     crazy_output = {
+        "David see" :" -it worked",
         "joke": joke,
         "emoji": random.choice(emojis),
         "reaction": random.choice(reactions),
