@@ -29,7 +29,7 @@ def lambda_handler(event, context):
 
     # Build chaotic output
     crazy_output = {
-        "David see" :" -it worked - again",
+        "David see" :" -it worked - again - I've added Manual Approval",
         "joke": joke,
         "emoji": random.choice(emojis),
         "reaction": random.choice(reactions),
